@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form and Input</title>
+</head>
+
+<body>
+
+    <!-- Action: Form action allows us to tell the browser what to do when the submit button is clicked -->
+    <!-- Method: Post method is to post the data from as a request, get is to get the data from a request -->
+    <!-- Enctype: sets the encryption type of the form -->
+    <!-- application/x-www-form-urlencoded: Default
+         multipart/form-data: used when <input> elements with type=file
+         text/plain: converts data into plain text -->
+    <form action="mailto:xyz@gmail.com" method="post" enctype="text/plain" target="_blank">
+        <label for="Name">Name:</label>
+        <input type="text" name="Name">
+        <br>
+        <label for="Email">Email:</label>
+        <input type="email" name="Email">
+        <br>
+        <label for="Password">Password:</label>
+        <input type="password" name="Password">
+        <br>
+        <label for="Suggestions">Suggestions:</label>
+        <textarea name="Suggestions" cols="30" rows="10"></textarea>
+        <br>
+        <label for="T&C">Do you agree to the terms and conditions</label>
+        <input type="radio" name="yes/no">Yes
+        <input type="radio" name="yes/no">No
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
